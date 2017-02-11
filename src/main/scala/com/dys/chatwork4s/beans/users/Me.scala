@@ -10,7 +10,7 @@ case class Me(
                accountId: Int,
                roomId: Long,
                name: String,
-               chatworkId: String,
+               chatWorkId: String,
                organizationId: Long,
                organizationName: String,
                department: String,

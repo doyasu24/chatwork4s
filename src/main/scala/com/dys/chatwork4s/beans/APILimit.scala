@@ -1,7 +1,7 @@
 package com.dys.chatwork4s.beans
 
 /**
-  * ChatworkAPIの利用回数制限情報
+  * ChatWorkAPIの利用回数制限情報
   * APIのリクエスト数は、5分あたり100回までとなります。（APIの利用回数は、今後変更される可能性があります）
   * この制限を超えた場合、APIのレスポンスが 429 Too Many Requests エラーを返すようになります。
   *

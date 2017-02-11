@@ -5,17 +5,17 @@ import com.dys.chatwork4s.http.HttpMethodImpl
 /**
   * Created by dys on 2017/02/06.
   */
-object ChatworkFactory {
+object ChatWorkFactory {
 
   val serverUrl: String = "https://api.chatwork.com/v2"
 
-  def syncAPI(token: String): Chatwork = {
+  def syncAPI(token: String): ChatWork = {
     val method = new HttpMethodImpl(serverUrl, token)
-    new Chatwork(method)
+    new ChatWork(method)
   }
 
-  def asyncAPI(token: String): ChatworkAsync = {
+  def asyncAPI(token: String): ChatWorkAsync = {
     val method = new HttpMethodImpl(serverUrl, token)
-    new ChatworkAsync(method)
+    new ChatWorkAsync(method)
   }
 }

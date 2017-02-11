@@ -1,7 +1,7 @@
 package com.dys.chatwork4s.utils
 
 import com.dys.chatwork4s.beans.Errors
-import com.dys.chatwork4s.exception.ChatworkException
+import com.dys.chatwork4s.exception.ChatWorkException
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
@@ -14,7 +14,7 @@ private[chatwork4s] object Sync {
   def await[T](f: Future[Either[Errors, T]])(implicit atMost: Duration): T = {
     Await.result[Either[Errors, T]](f, atMost) match {
       case Right(r) => r
-      case Left(e) => throw new ChatworkException(e)
+      case Left(e) => throw new ChatWorkException(e)
     }
   }
 }

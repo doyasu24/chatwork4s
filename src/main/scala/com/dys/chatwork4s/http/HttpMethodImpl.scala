@@ -4,7 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import com.dys.chatwork4s.beans.APILimit
 import com.dys.chatwork4s.http.parameters.HttpParameter
-import com.dys.chatwork4s.log.ChatworkLazyLogging
+import com.dys.chatwork4s.log.ChatWorkLazyLogging
 import play.api.http.Status
 import play.api.libs.json.Reads
 import play.api.libs.ws.ahc.AhcWSClient
@@ -17,7 +17,7 @@ class HttpMethodImpl(
                       val serverUrl: String,
                       token: String,
                       timeLimit: Long = 20000
-                    ) extends HttpMethod with ChatworkLazyLogging {
+                    ) extends HttpMethod with ChatWorkLazyLogging {
 
   private implicit val system = ActorSystem()
   private implicit val materializer = ActorMaterializer()

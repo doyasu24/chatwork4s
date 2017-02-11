@@ -16,9 +16,9 @@ import scala.concurrent.duration.Duration
   * @param roomId     roomId
   * @param httpMethod httpMethod
   */
-class ChatworkRoom(val roomId: Long, httpMethod: HttpMethod) {
+class ChatWorkRoom(val roomId: Long, httpMethod: HttpMethod) {
 
-  private val room = new ChatworkRoomAsync(roomId, httpMethod)
+  private val room = new ChatWorkRoomAsync(roomId, httpMethod)
 
   implicit private val atMost: Duration = Duration.Inf
 

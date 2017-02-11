@@ -16,7 +16,7 @@ import scala.concurrent.{ExecutionContext, Future}
   * @param roomId     roomId
   * @param httpMethod httpMethod
   */
-class ChatworkRoomAsync(val roomId: Long, httpMethod: HttpMethod) {
+class ChatWorkRoomAsync(val roomId: Long, httpMethod: HttpMethod) {
 
   /**
     * チャットの名前、アイコン、種類(my/direct/group)を取得

@@ -7,7 +7,7 @@ import com.fasterxml.jackson.module.scala.DefaultScalaModule
 /**
   * Created by dys on 2017/02/06.
   */
-case class TestConfig(chatworkAPIUrl: String, token: String, testRoomId: Long)
+case class TestConfig(chatWorkAPIUrl: String, token: String, testRoomId: Long)
 
 object TestConfig {
   def load(): TestConfig = {

@@ -6,6 +6,6 @@ import org.slf4j.LoggerFactory
 /**
   * Created by dys on 2017/02/11.
   */
-trait ChatworkLazyLogging {
+trait ChatWorkLazyLogging {
   protected lazy val logger: Logger = Logger(LoggerFactory.getLogger(getClass.getName))
 }

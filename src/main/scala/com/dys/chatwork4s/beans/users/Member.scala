@@ -21,7 +21,7 @@ case class Member(
                    accountId: Int,
                    role: String,
                    name: String,
-                   chatworkId: String,
+                   chatWorkId: String,
                    organizationId: Long,
                    organizationName: String,
                    department: String,

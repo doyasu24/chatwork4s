@@ -11,7 +11,7 @@ case class IncomingRequest(
                             accountId: Int,
                             message: String,
                             name: String,
-                            chatworkId: String,
+                            chatWorkId: String,
                             organizationId: Long,
                             organizationName: String,
                             department: String,

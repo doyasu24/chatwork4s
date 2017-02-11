@@ -9,9 +9,9 @@ import com.dys.chatwork4s.http.parameters._
 import scala.concurrent.{ExecutionContext, Future}
 
 /**
-  * Chatworkの非同期API
+  * ChatWorkの非同期API
   */
-class ChatworkAsync(httpMethod: HttpMethod) {
+class ChatWorkAsync(httpMethod: HttpMethod) {
 
   def close(): Unit = httpMethod.close()
 
@@ -21,7 +21,7 @@ class ChatworkAsync(httpMethod: HttpMethod) {
     * @param roomId roomId
     * @return
     */
-  def room(roomId: Long): ChatworkRoomAsync = new ChatworkRoomAsync(roomId, httpMethod)
+  def room(roomId: Long): ChatWorkRoomAsync = new ChatWorkRoomAsync(roomId, httpMethod)
 
   /**
     * 自分自身の情報を取得
