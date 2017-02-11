@@ -1,0 +1,9 @@
+# Please rename this file to test-config.yml
+{
+  chatworkAPIUrl: "https://api.chatwork.com/v2",
+
+  token: "your chatwork api token",
+
+  # test room id - https://www.chatwork.com/#![roomId]
+  testRoomId: -1
+}
