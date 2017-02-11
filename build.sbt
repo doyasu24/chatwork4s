@@ -27,6 +27,7 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
   "org.mockito" % "mockito-core" % "2.7.1" % "test",
   "ch.qos.logback" % "logback-classic" % "1.1.9" % "test",
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.8.6" % "test",
   "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.6" % "test",
   "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.6" % "test",
   "com.fasterxml.jackson.dataformat" % "jackson-dataformat-yaml" % "2.8.6" % "test"
